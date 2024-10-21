@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BukuView</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
@@ -53,7 +53,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Form Tambah Buku</h1>
+          <h5 class="modal-title fs-5" id="exampleModalLabel">Form Tambah Buku</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -89,7 +89,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Konfirmasi Hapus Data</h1>
+          <h5 class="modal-title fs-5" id="exampleModalLabel">Konfirmasi Hapus Data</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -109,23 +109,22 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
 <script>
   const hapusModal = document.getElementById('hapusModal')
-    hapusModal.addEventListener('show.bs.modal', event => {
-      // Button that triggered the modal
-      const button = event.relatedTarget
-      // Extract info from data-bs-* attributes
-      const id = button.getAttribute('data-bs-id')
-      // If necessary, you could initiate an Ajax request here
-      // and then do the updating in a callback. 
+  hapusModal.addEventListener('show.bs.modal', event => {
+    // Button that triggered the modal
+    const button = event.relatedTarget
+    // Extract info from data-bs-* attributes
+    const id = button.getAttribute('data-bs-id')
+    // If necessary, you could initiate an Ajax request here
+    // and then do the updating in a callback. 
 
-      // Update the modal's content.
-      const idHapus = hapusModal.querySelector('#idHapus')
-      const textId = hapusModal.querySelector('#textId')
+    // Update the modal's content.
+    const idHapus = hapusModal.querySelector('#idHapus')
+    const textId = hapusModal.querySelector('#textId')
 
-      idHapus.value = id;
-      textId.textContent= id;
-      
-    })
-  
+    idHapus.value = id;
+    textId.textContent = id;
+
+  })
 </script>
 
 </html>
