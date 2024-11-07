@@ -21,7 +21,7 @@
             ?>
 
             <div class="valet-success">
-              <?=$_SESSION['succsess'];?>
+              <?=$_SESSION['success'];?>
             </div>
             <?php
             endif;

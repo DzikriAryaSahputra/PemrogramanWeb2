@@ -31,7 +31,7 @@ class BukuController{
     $daftar_buku->update($buku);
 
     session_start();
-    $_SESSION['succsess'] = "Data berhasil diupdate";
+    $_SESSION['success'] = "Data berhasil diupdate";
 
     header('Location: http://localhost/index.php');
     exit;
@@ -44,7 +44,7 @@ class BukuController{
     $daftar_buku->simpan($buku);
 
     session_start();
-    $_SESSION['succsess'] = "Data berhasil disimpan";
+    $_SESSION['success'] = "Data berhasil disimpan";
     header('Location: http://localhost/index.php');
     exit;
   }
@@ -56,7 +56,7 @@ class BukuController{
     $daftar_buku->delete($id);
     
     session_start();
-    $_SESSION['succsess'] = "Data berhasil dihapus!";
+    $_SESSION['success'] = "Data berhasil dihapus!";
     header('Location: http://localhost/index.php');
     exit;
   }
