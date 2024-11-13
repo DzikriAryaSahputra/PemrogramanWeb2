@@ -16,7 +16,7 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>Implement session</h1>
+  <h1>Implement session php</h1>
   <p>Anda sudah mengunjungi halaman ini sebanyak
 <?php
  if($_SESSION['count']){
