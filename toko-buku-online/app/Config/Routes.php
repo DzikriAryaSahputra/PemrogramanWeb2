@@ -15,4 +15,5 @@ service('auth')->routes($routes);
 $routes->post('submit', 'Home::submit');
 
 // ADMIN ROUTES
+$routes->get('admin/databuku','AdminController::databuku');
 $routes->get('/admin','AdminController::databuku');

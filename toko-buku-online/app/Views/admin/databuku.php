@@ -37,12 +37,25 @@
                 <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#hapusModal" data-bs-id="1"><i class="bi bi-trash"></i> Hapus</button>
               </td>
             </tr>
+            <tr>
             <td>2</td>
             <td>Aku Dan Dia</td>
             <td>Asep</td>
             <td>Gramedia</td>
             <td>2020</td>
             <td>https://google.com/2.jpg</td>
+            <td>
+              <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editModal" data-bs-id="2"><i class="bi bi-pencil-square"></i> Edit</button>
+              <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#hapusModal" data-bs-id="2"><i class="bi bi-trash"></i> Hapus</button>
+            </td>
+            </tr>
+            <tr>
+            <td>3</td>
+            <td>Cinta Itu Luka</td>
+            <td>Eka Kurniawan</td>
+            <td>Gramedia</td>
+            <td>2018</td>
+            <td>https://google.com/3.jpg</td>
             <td>
               <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editModal" data-bs-id="2"><i class="bi bi-pencil-square"></i> Edit</button>
               <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#hapusModal" data-bs-id="2"><i class="bi bi-trash"></i> Hapus</button>
