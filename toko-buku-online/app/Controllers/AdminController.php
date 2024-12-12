@@ -12,4 +12,16 @@ class AdminController extends Controller
     {
         return view('admin/databuku');
     }
+    public function pelanggan()
+    {
+        return view('admin/pelanggan');
+    }
+    public function dashboard()
+    {
+        return view('admin/dashboard');
+    }
+    public function transaksi()
+    {
+        return view('admin/transaksi');
+    }
 }
