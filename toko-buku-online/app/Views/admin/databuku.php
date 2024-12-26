@@ -49,7 +49,7 @@
   <table class="table table-striped mt-3">
     <thead>
       <tr>
-        <th>ID</th>
+        <th>Id</th>
         <th>Judul</th>
         <th>Pengarang</th>
         <th>Penerbit</th>
