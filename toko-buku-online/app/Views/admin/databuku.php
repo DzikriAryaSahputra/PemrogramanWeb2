@@ -6,21 +6,21 @@
   <br>
   <h1>Data Buku</h1>
   <!-- Topbar -->
-   <?php if (session('sukses')):?>
-   <div class="mb-3">
-<div class="alert alert-success">
-<strong>Sukses</strong> <?= session('sukses')?>
-</div>
-   </div>
-<?php endif?>
+  <?php if (session('sukses')): ?>
+    <div class="mb-3">
+      <div class="alert alert-success">
+        <strong>Sukses</strong> <?= session('sukses') ?>
+      </div>
+    </div>
+  <?php endif ?>
 
-<?php if (session('gagal')):?>
-   <div class="mb-3">
-<div class="alert alert-danger">
-<strong>gagal</strong> <?= session('gagal')?>
-</div>
-   </div>
-<?php endif?>
+  <?php if (session('gagal')): ?>
+    <div class="mb-3">
+      <div class="alert alert-danger">
+        <strong>gagal</strong> <?= session('gagal') ?>
+      </div>
+    </div>
+  <?php endif ?>
 
   <!-- Sidebar Toggle (Topbar) -->
   <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
@@ -61,20 +61,20 @@
     <tbody>
 
       <!-- Data Dummy -->
-       <?php foreach($books as $buku): ?>
-      <tr>
-        <td><?= $buku['id'];?></td>
-        <td><?= $buku['judul'];?></td>
-        <td><?= $buku['pengarang'];?></td>
-        <td><?= $buku['penerbit'];?></td>
-        <td><?= $buku['tahun'];?></td>
-        <td><img src="<?= base_url($buku['thumbnail_url'])?>" alt="<?= $buku['judul']?>" class="img-thumbnail" style="width: 150px; height:auto;"></td>
-        <td>
-          <a href="<?= base_url('admin/databuku/'. $buku['id'].'/edit')?>" class="btn btn-warning btn-sm" ><i class="bi bi-pencil-square"></i> Edit</a>
-          <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#hapusModal" data-bs-id="<?= $buku['id'];?>"><i class="bi bi-trash"></i> Hapus</button>
-        </td>
-      </tr>
-      <?php endforeach;?>
+      <?php foreach ($books as $buku): ?>
+        <tr>
+          <td><?= $buku['id']; ?></td>
+          <td><?= $buku['judul']; ?></td>
+          <td><?= $buku['pengarang']; ?></td>
+          <td><?= $buku['penerbit']; ?></td>
+          <td><?= $buku['tahun']; ?></td>
+          <td><img src="<?= base_url($buku['thumbnail_url']) ?>" alt="<?= $buku['judul'] ?>" class="img-thumbnail" style="width: 150px; height:auto;"></td>
+          <td>
+            <a href="<?= base_url('admin/databuku/' . $buku['id'] . '/edit') ?>" class="btn btn-warning btn-sm"><i class="bi bi-pencil-square"></i> Edit</a>
+            <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#hapusModal" data-bs-id="<?= $buku['id']; ?>"><i class="bi bi-trash"></i> Hapus</button>
+          </td>
+        </tr>
+      <?php endforeach; ?>
     </tbody>
   </table>
 </div>
@@ -89,7 +89,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form action="<?= base_url('admin/databuku');?>" method="POST" enctype="multipart/form-data" id="formTambah">
+        <form action="<?= base_url('admin/databuku'); ?>" method="POST" enctype="multipart/form-data" id="formTambah">
           <div class="mb-3">
             <label for="judul">Judul</label>
             <input type="text" name="judul" id="judul" class="form-control">

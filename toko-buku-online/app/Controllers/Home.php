@@ -30,3 +30,4 @@ class Home extends BaseController
         return $this->response->download(WRITEPATH . 'uploads/images/' . $file, null);
     }
 }
+    
